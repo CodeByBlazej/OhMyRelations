@@ -9,4 +9,6 @@ class User < ApplicationRecord
 
   has_one :purse
   has_one :payment_history, through: :purse
+
+  has_many :comments, as: :commentable
 end
